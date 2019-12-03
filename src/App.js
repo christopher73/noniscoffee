@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import video from "./latte.mp4";
+import VideoCover from "react-video-cover";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <div className="h-100 ">
+          <div className="video-contain">
+            <Navbar></Navbar>
+            <video
+              width="100%"
+              heigh="100%"
+              style={{ objectFit: "cover" }}
+              className="video"
+              loop
+              autoPlay
+              muted
+            >
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div className="container">hello</div>
+      </>
+    );
+  }
 }
 
 export default App;
