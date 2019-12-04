@@ -4,7 +4,7 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <header>
-        <nav className="navbar navbar-expand-md py-2 py-sm-5 my-md-5 my-2 fixed-top navbar-dark bg-transparent text-white ">
+        <nav className="navbar navbar-expand-md my-2 my-sm-5 my-md-5 my-2 navbar-dark bg-transparent text-white border-bottom border-white ">
           <button
             className="navbar-toggler bg-transparent border-white ml-auto"
             type="button"
@@ -23,7 +23,7 @@ export default class Navbar extends React.Component {
                   className="h5 m-3 text-white font-weight-bold text-uppercase "
                   href="#"
                 >
-                  Home <span className="sr-only">(current)</span>
+                  about
                 </a>
               </li>
               <li className="nav-item">
@@ -31,7 +31,7 @@ export default class Navbar extends React.Component {
                   className="h5 m-3 text-white font-weight-bold text-uppercase"
                   href="#"
                 >
-                  Link
+                  menu
                 </a>
               </li>
               <li className="nav-item">
@@ -39,7 +39,15 @@ export default class Navbar extends React.Component {
                   className="h5 m-3 text-white font-weight-bold text-uppercase"
                   href="#"
                 >
-                  Disabled
+                  order
+                </a>{" "}
+              </li>{" "}
+              <li className="nav-item">
+                <a
+                  className="h5 m-3 text-white font-weight-bold text-uppercase"
+                  href="#"
+                >
+                  gallery
                 </a>
               </li>
             </ul>
