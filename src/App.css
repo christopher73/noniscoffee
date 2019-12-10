@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Cormorant", serif;
 }
 .arrows {
   width: 60px;
@@ -8,7 +8,7 @@
 .arrows path {
   stroke: #ffffff;
   fill: transparent;
-  stroke-width: 1px;
+  stroke-width: 3px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
