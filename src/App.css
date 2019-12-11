@@ -57,3 +57,33 @@
   animation-delay: 0s;
   -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
+
+/* const style = {
+  width: "100%",
+  height: "100%",
+  position: "absolute",
+  top: 0,
+  left: 0,
+  zIndex: -97,
+  opacity: 0.5
+  // background: "black"
+}; */
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -7;
+}
+.video::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
