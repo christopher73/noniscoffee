@@ -5,6 +5,7 @@ import Cover from "react-video-cover";
 import "./App.css";
 import Testimonials from "./components/Testimonials";
 import { Link, animateScroll as scroll } from "react-scroll";
+import GoogleMaps from "./components/GoogleMaps";
 class App extends React.Component {
   render() {
     const videoOptions = {
@@ -72,15 +73,19 @@ class App extends React.Component {
           <div className="row">
             <div className="col-md-12 m-auto text-black text-center">
               <h1>
+                About Noni's Coffee Shop <br></br> -since 2010-
+              </h1>
+              <h3>
                 {" "}
                 Noni's Coffee Shop serves up some of the best Deli for delivery
                 in all of New York. Delivery is fast and ordering is easy, so
                 order now and get fresh food delivered to your door in no time.
-              </h1>
+              </h3>
             </div>
           </div>
         </div>
         <Testimonials></Testimonials>
+        <GoogleMaps></GoogleMaps>
       </>
     );
   }
