@@ -43,7 +43,7 @@ class GoogleMaps extends Component {
             <p className="h3 font-weight-bold">LOCATION:</p>
             <p className="h3 ">Riverdale Ave, The Bronx, NY 10471</p>
             <p className="h3 font-weight-bold">HOURS:</p>
-            <p className="h3"> 5AM -6:30 PM </p>
+            <p className="h3"> 5AM - 6:30 PM </p>
             <p className="h3 font-weight-bold">PHONE:</p>
             <p className="h3">(718)601-0132</p>
           </div>

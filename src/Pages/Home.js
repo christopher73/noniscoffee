@@ -8,6 +8,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import GoogleMaps from "../components/GoogleMaps";
 import Navbar from "../components/Navbar";
 import PhotoGallery from "./PhotoGallery";
+import Footer from "../components/Footer";
+import Info from "../components/Info";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class Home extends React.Component {
@@ -72,23 +74,11 @@ export default class Home extends React.Component {
             </svg>
           </Link>
         </div>
-        <div id="mainDescription" className="container ">
-          <div className="row">
-            <div className="col-md-12 m-auto text-black text-center py-4">
-              <h1>
-                About Noni's Coffee Shop <br></br> -since 2010-
-              </h1>
-              <h3>
-                {" "}
-                Noni's Coffee Shop serves up some of the best Deli for delivery
-                in all of New York. Delivery is fast and ordering is easy, so
-                order now and get fresh food delivered to your door in no time.
-              </h3>
-            </div>
-          </div>
-        </div>
-        <Testimonials></Testimonials> <PhotoGallery></PhotoGallery>
-        <GoogleMaps></GoogleMaps>
+        <Info />
+        <Testimonials />
+        <PhotoGallery />
+        <GoogleMaps />
+        <Footer />
       </>
     );
   }
