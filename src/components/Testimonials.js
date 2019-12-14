@@ -7,13 +7,13 @@ export default class Testimonials extends React.Component {
     return (
       <div className="container my-5 py-3">
         <div className="row">
-          <div className=" col-md-4 col-12 text-center ">
+          <div className="col-12 text-center m-auto">
             <h1>Client Testimonials</h1>
             <h3> Here’s what our customers say:</h3>
           </div>
         </div>
         <div className="row">
-          <div className=" col-md-4 col-12">
+          <div className="col-sm-12 col-md-6 col-12">
             <div className="card border-0 text-center">
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
@@ -38,7 +38,7 @@ export default class Testimonials extends React.Component {
               </div>
             </div>
           </div>
-          <div className=" col-md-4 col-12">
+          <div className="col-sm-12 col-md-6 col-12">
             <div className="card border-0 text-center">
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
@@ -60,7 +60,7 @@ export default class Testimonials extends React.Component {
               </div>
             </div>
           </div>
-          <div className=" col-md-4 col-12">
+          <div className="col-sm-12 col-md-6 col-12">
             <div className="card border-0 text-center">
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
@@ -81,6 +81,28 @@ export default class Testimonials extends React.Component {
                   <footer className="blockquote-footer">
                     Francis Averilla
                   </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="col-sm-12 col-md-6 col-12">
+            <div className="card border-0 text-center">
+              <div className="card-header bg-transparent">
+                <FontAwesomeIcon
+                  icon={faQuoteRight}
+                  style={{ color: "#669CFF", height: "30", width: "30px" }}
+                />
+              </div>
+              <div className="card-body">
+                <blockquote className="blockquote mb-0">
+                  <p>
+                    Went in today for the first time, it's literally a few
+                    minutes away from where I live but never walked in until
+                    today, I loved the environment, it felt like home. Everyone
+                    was extremely nice and the food was great, I will definitely
+                    be going in more offend.
+                  </p>
+                  <footer className="blockquote-footer">Belgica R.</footer>
                 </blockquote>
               </div>
             </div>
