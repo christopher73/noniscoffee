@@ -19,8 +19,8 @@ export default class Navbar extends React.Component {
 
   handleScroll = () => {
     lastScrollY = window.scrollY;
-    if (lastScrollY > 0) {
-      this.nav.current.style.backgroundColor = "rgb(115, 31, 31,0.85)";
+    if (lastScrollY > 4) {
+      // this.nav.current.style.backgroundColor = "rgb(115, 31, 31,0.85)";
       this.setState({ orderOnline: true });
     } else {
       this.setState({ orderOnline: false });
@@ -31,12 +31,14 @@ export default class Navbar extends React.Component {
     return (
       <header id="headerNav">
         <nav
+          style={{ backgroundColor: "rgb(115, 31, 31,0.95)" }}
           ref={this.nav}
-          style={{ backgroundColor: "rgb(115, 31, 31,0.45)" }}
-          className="navbar navbar-expand-md fixed-top  navbar-dark  border-bottom border-white "
+          className={`navbar navbar-expand-md navbar-dark ${
+            this.props.isWindowlarge ? " fixed-top" : "sticky-top"
+          } `}
         >
           <button
-            className="navbar-toggler bg-transparent border-white ml-auto"
+            className="navbar-toggler  border-white ml-auto"
             type="button"
             data-toggle="collapse"
             data-target="#navbarCollapse"

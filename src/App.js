@@ -13,9 +13,11 @@ import PhotoGallery from "./Pages/PhotoGallery";
 class App extends React.Component {
   render() {
     return (
-      <Router>
-        <Route exact path="/" component={Home}></Route>
-      </Router>
+      <>
+        <Router>
+          <Route exact path="/" component={Home}></Route>
+        </Router>
+      </>
     );
   }
 }
