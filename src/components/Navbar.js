@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
 
   handleScroll = () => {
     lastScrollY = window.scrollY;
-    if (lastScrollY > 4) {
+    if (lastScrollY > 0) {
       // this.nav.current.style.backgroundColor = "rgb(115, 31, 31,0.85)";
       this.setState({ orderOnline: true });
     } else {
@@ -30,15 +30,25 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <header id="headerNav">
-        <nav
-          style={{ backgroundColor: "rgb(115, 31, 31,0.95)" }}
-          ref={this.nav}
-          className={`navbar navbar-expand-md navbar-dark ${
-            this.props.isWindowlarge ? " fixed-top" : "sticky-top"
-          } `}
+        <div
+          className={`navbar navbar-expand-md ${
+            this.state.orderOnline ? "fixed-top" : "position-static"
+          }`}
+          style={{
+            backgroundColor: "#E9C8B6",
+            color: "#24355D",
+            textAlign: "center"
+          }}
         >
+          <a
+            style={{ color: "#24355D", fontFamily: " 'Rye', cursive" }}
+            className="h1 font-weight-normal navbar-brand"
+            href="#"
+          >
+            Noni's<br></br> Coffee Shop
+          </a>{" "}
           <button
-            className="navbar-toggler  border-white ml-auto"
+            className="navbar-toggler custom-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarCollapse"
@@ -48,55 +58,104 @@ export default class Navbar extends React.Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
-            <ul id="listNav" className="navbar-nav m-auto text-center p-3">
-              <li className="nav-item ">
-                <SmoothLink
-                  activeClass="active"
-                  to="mainDescription"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={1200}
+          <div className="collapse navbar-collapse " id="navbarCollapse">
+            <ul className="navbar-nav ml-auto">
+              {" "}
+              <SmoothLink
+                activeClass="active"
+                to="location"
+                spy={true}
+                smooth={true}
+                isDynamic={true}
+                offset={-80}
+                duration={1200}
+              >
+                <li
+                  data-toggle="collapse"
+                  data-target="#navbarCollapse"
+                  style={{ color: "#24355D" }}
+                  className="btn btn-lg btn-link  font-weight-bold text-uppercase "
                 >
-                  <p className="btn btn-lg btn-link text-white font-weight-bold text-uppercase py-0 my-0">
-                    about
-                  </p>
-                </SmoothLink>
-              </li>
-              <li className="nav-item">
-                <Link to="/">
-                  <p className="btn btn-lg btn-link text-white font-weight-bold text-uppercase py-0 my-0">
-                    menu
-                  </p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <SmoothLink
-                  activeClass="active"
-                  to="photoGallery"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={1200}
-                >
-                  <p className="btn btn-lg btn-link text-white font-weight-bold text-uppercase py-0 my-0">
-                    gallery
-                  </p>
-                </SmoothLink>
-              </li>
-              {!this.state.orderOnline ? null : (
-                <li className="nav-item">
-                  <Link to="/orderonline">
-                    <p className="btn btn-outline-light border-white border rounded font-weight-bold text-uppercase py-0 my-0">
-                      order online
-                    </p>
-                  </Link>
+                  HOURS & LOCATION
                 </li>
-              )}
+              </SmoothLink>{" "}
+              <Link to="/">
+                <li
+                  data-toggle="collapse"
+                  data-target="#navbarCollapse"
+                  style={{ color: "#24355D" }}
+                  className="btn btn-lg btn-link  font-weight-bold text-uppercase "
+                >
+                  menus
+                </li>
+              </Link>
+              <SmoothLink
+                activeClass="active"
+                to="mainDescription"
+                spy={true}
+                smooth={true}
+                isDynamic={true}
+                offset={-80}
+                duration={1200}
+              >
+                <li
+                  data-toggle="collapse"
+                  data-target="#navbarCollapse"
+                  style={{ color: "#24355D" }}
+                  className=" btn btn-lg btn-link  font-weight-bold text-uppercase"
+                >
+                  about
+                </li>
+              </SmoothLink>
+              <SmoothLink
+                activeClass="active"
+                to="photoGallery"
+                spy={true}
+                smooth={true}
+                isDynamic={true}
+                offset={-80}
+                duration={1200}
+              >
+                <li
+                  data-toggle="collapse"
+                  data-target="#navbarCollapse"
+                  style={{ color: "#24355D" }}
+                  className="btn btn-lg btn-link  font-weight-bold text-uppercase "
+                >
+                  gallery
+                </li>
+              </SmoothLink>
+              <Link to="/orderonline">
+                <li
+                  id="btn3"
+                  className="btn btn-lg shadow-lg rounded-0   font-weight-bold text-uppercase"
+                >
+                  order online
+                </li>
+              </Link>
             </ul>
           </div>
-        </nav>
+        </div>{" "}
+        {!this.state.orderOnline ? (
+          <div
+            style={{
+              backgroundColor: "#24355D",
+              padding: "10px",
+              position: "absolute",
+              width: "100%"
+            }}
+          >
+            <h5 className="m-0 text-center">
+              <a
+                target="_blank"
+                style={{ color: "#F2EFE6" }}
+                href="https://goo.gl/maps/6BL2iW9oKQmoxJ7L9"
+              >
+                5921 Riverdale Ave Bronx, NY 10471
+              </a>
+            </h5>
+          </div>
+        ) : null}
       </header>
     );
   }

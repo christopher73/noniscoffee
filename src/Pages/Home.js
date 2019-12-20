@@ -70,15 +70,11 @@ export default class Home extends React.Component {
             }}
           />
         </div>
-        <div className="container h-100 text-center w-100 d-flex flex-column justify-content-center align-items-center">
-          <div
-            width={this.state.width}
-            height={this.state.height}
-            className="row"
-          >
+        <div className="container h-100 text-center w-100 d-flex flex-column align-content-center  justify-content-center ">
+          <div className="row " style={{ marginTop: "-10%" }}>
             <div className="col-md-12 m-auto text-white text-center">
               <h1
-                style={{ fontFamily: " 'Rye', cursive" }}
+                style={{ fontFamily: " 'Rye', cursive", color: "#F2EFE6" }}
                 className={`${
                   window.innerWidth <= 760 || window.innerHeight <= 700
                     ? "h1 "
@@ -88,37 +84,25 @@ export default class Home extends React.Component {
                 Noni's<br></br> Coffee Shop
               </h1>
             </div>
-
-            <div
-              className={`col-md-12 col-sm-12  m-auto  text-center  ${
-                window.innerWidth <= 760 || window.innerHeight <= 700
-                  ? "py-2"
-                  : "my-3 py-4"
-              }`}
-            >
-              <button
-                aria-required="true"
-                aria-label="Primary"
-                className={`btn btn-outline-light text-white border-white ${
-                  window.innerWidth <= 760 || window.innerHeight <= 700
-                    ? "btn-sm "
-                    : "btn-lg "
-                }`}
-              >
-                ORDER ONLINE
-              </button>
+            <div className="col-md-6 col-sm-6 col-12 m-auto py-2 text-center">
+              <Link to="/orderonline">
+                <li
+                  id="btn3"
+                  className="btn btn-lg shadow-lg w-100 rounded-0  font-weight-bold text-uppercase "
+                >
+                  order online
+                </li>
+              </Link>
             </div>
-            <div className="col-md-12 col-sm-12 m-auto text-center">
-              <h3
-                className={`${
-                  window.innerWidth <= 760 || window.innerHeight <= 700
-                    ? "h5"
-                    : "h3"
-                } text-uppercase text-white `}
-              >
-                5921 Riverdale Ave<br></br> Bronx, NY 10471<br></br>
-                (718) 601-0132
-              </h3>
+            <div className="col-md-6 col-sm-6 col-12 m-auto  text-center ">
+              <Link to="/menu">
+                <li
+                  id="btn3"
+                  className="btn btn-lg shadow-lg w-100 rounded-0  font-weight-bold text-uppercase "
+                >
+                  view menus
+                </li>
+              </Link>
             </div>
           </div>
           <div
@@ -134,7 +118,7 @@ export default class Home extends React.Component {
               to="mainDescription"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-180}
               duration={1200}
             >
               <svg className="arrows">

@@ -5,7 +5,11 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 export default class Info extends React.Component {
   render() {
     return (
-      <div id="mainDescription" className="container ">
+      <div
+        id="mainDescription"
+        style={{ color: "#24355d" }}
+        className="container "
+      >
         <div className="row">
           <div className="col-md-12 m-auto text-black text-center py-4">
             <h1>

@@ -5,7 +5,7 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 export default class Testimonials extends React.Component {
   render() {
     return (
-      <div className="container my-5 py-3">
+      <div className="container my-5 py-3" style={{ color: "#24355d" }}>
         <div className="row">
           <div className="col-12 text-center m-auto">
             <h1>Client Testimonials</h1>
@@ -18,11 +18,11 @@ export default class Testimonials extends React.Component {
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
-                  style={{ color: "#669CFF", height: "30", width: "30px" }}
+                  style={{ color: "#E9C8B6", height: "30", width: "30px" }}
                 />
               </div>
               <div className="card-body">
-                <blockquote className="blockquote mb-0">
+                <blockquote className="blockquote mb-0 ">
                   <p>
                     I just finished an "Outstanding Thanksgiving Dinner"
                     delivered HOT from Noni's. Light and dark meat Turkey.
@@ -43,7 +43,7 @@ export default class Testimonials extends React.Component {
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
-                  style={{ color: "#669CFF", height: "30", width: "30px" }}
+                  style={{ color: "#E9C8B6", height: "30", width: "30px" }}
                 />
               </div>
               <div className="card-body">
@@ -65,7 +65,7 @@ export default class Testimonials extends React.Component {
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
-                  style={{ color: "#669CFF", height: "30", width: "30px" }}
+                  style={{ color: "#E9C8B6", height: "30", width: "30px" }}
                 />
               </div>
               <div className="card-body">
@@ -90,7 +90,7 @@ export default class Testimonials extends React.Component {
               <div className="card-header bg-transparent">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
-                  style={{ color: "#669CFF", height: "30", width: "30px" }}
+                  style={{ color: "#E9C8B6", height: "30", width: "30px" }}
                 />
               </div>
               <div className="card-body">

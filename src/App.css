@@ -1,12 +1,18 @@
 * {
-  font-family: "Cormorant", serif;
+  font-family: "Nunito", sans-serif;
+}
+.custom-toggler.navbar-toggler {
+  border-color: #24355d;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(36, 53, 93)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .arrows {
   width: 60px;
   height: 72px;
 }
 .arrows path {
-  stroke: #ffffff;
+  stroke: #f2efe6;
   fill: transparent;
   stroke-width: 3px;
   animation: arrow 2s infinite;
@@ -66,14 +72,25 @@
   left: 0;
   z-index: -7;
 }
-.video::after {
+.video::before {
   content: "";
   width: 100%;
+  position: absolute;
   height: 100%;
   background-color: black;
-  opacity: 0.5;
-  position: absolute;
+  opacity: 0.32;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 99;
+}
+
+#btn3 {
+  background-color: #f2efe6;
+  color: #24355d;
+  border-color: #24355d;
+  border-width: 5px;
+}
+#btn3:hover {
+  color: #f2efe6;
+  background-color: #24355d;
 }
