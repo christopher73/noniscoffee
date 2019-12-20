@@ -31,18 +31,18 @@ export default class Navbar extends React.Component {
     return (
       <header id="headerNav">
         <div
-          className={`navbar navbar-expand-md ${
+          className={`navbar navbar-expand-lg ${
             this.state.orderOnline ? "fixed-top" : "position-static"
           }`}
           style={{
-            backgroundColor: "#E9C8B6",
+            backgroundColor: "#f6c6b5",
             color: "#24355D",
             textAlign: "center"
           }}
         >
           <a
             style={{ color: "#24355D", fontFamily: " 'Rye', cursive" }}
-            className="h1 font-weight-normal navbar-brand"
+            className="h1 p-0 m-0 font-weight-normal navbar-brand"
             href="#"
           >
             Noni's<br></br> Coffee Shop
