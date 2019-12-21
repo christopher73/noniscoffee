@@ -58,19 +58,11 @@ export default class Home extends React.Component {
         <Navbar
           isWindowlarge={window.innerWidth <= 760 ? false : true}
         ></Navbar>
-        <div className="video">
-          <Cover
-            // style={{ background: "black" }}
-            videoOptions={videoOptions}
-            remeasureOnWindowResize
-            getResizeNotifier={resizeNotifier => {
-              this.setState({
-                resizeNotifier
-              });
-            }}
-          />
-        </div>
-        <div className="container h-100 text-center w-100 d-flex flex-column align-content-center  justify-content-center ">
+
+        <div
+          id="main"
+          className="h-100 text-center w-100 d-flex flex-column align-content-center  justify-content-center "
+        >
           <div className="row " style={{ marginTop: "-10%" }}>
             <div className="col-md-12 m-auto text-white text-center">
               <h1
@@ -84,21 +76,20 @@ export default class Home extends React.Component {
                 Noni's<br></br> Coffee Shop
               </h1>
             </div>
-            <div className="col-md-6 col-sm-6 col-12 m-auto py-2 text-center">
+            <div className="col-md-6 col-sm-4 col-12 m-auto py-2 text-center">
               <Link to="/orderonline">
                 <li
                   id="btn3"
-                  className="btn btn-lg shadow-lg w-100 rounded-0  font-weight-bold text-uppercase "
+                  className="btn btn-lg shadow-lg w-100 rounded-0  m-2 font-weight-bold text-uppercase "
                 >
                   order online
                 </li>
               </Link>
-            </div>
-            <div className="col-md-6 col-sm-6 col-12 m-auto  text-center ">
+
               <Link to="/menu">
                 <li
                   id="btn3"
-                  className="btn btn-lg shadow-lg w-100 rounded-0  font-weight-bold text-uppercase "
+                  className="btn btn-lg shadow-lg w-100 rounded-0  m-2 font-weight-bold text-uppercase "
                 >
                   view menus
                 </li>

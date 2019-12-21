@@ -64,25 +64,25 @@
   -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
 
-.video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -7;
+#main {
+  background-color: #000;
+  position: relative;
+
 }
-.video::before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  background-color: black;
-  opacity: 0.15;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
+ 
+  #main::before {  
+    background: url("./assets/breakfast2.jpeg") no-repeat center center;
+    background-size: cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+  }
 
 #btn3 {
   background-color: #f2efe6;
