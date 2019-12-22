@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
       <footer className="pt-4 my-md-5 pt-md-5 border-top">
         <div className="container">
           <div className="row">
-            <div className="col-md-3 col-3 mx-auto text-center col-md-6 ">
+            <div className="col-md-3 col-3 mx-auto text-center">
               <h5>Features</h5>
               <ul className="list-unstyled text-small">
                 <li>
@@ -19,7 +19,7 @@ export default class Footer extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3 col-3 mx-auto text-center col-md-6 ">
+            <div className="col-md-3 col-3 mx-auto text-center">
               <h5>Resources</h5>
               <ul className="list-unstyled text-small">
                 <li>
@@ -30,7 +30,7 @@ export default class Footer extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3 col-3 mx-auto text-center col-md-6 ">
+            <div className="col-md-3 col-3 mx-auto text-center">
               <h5>About</h5>
               <ul className="list-unstyled text-small">
                 <li>

@@ -76,7 +76,7 @@ export default class Home extends React.Component {
                 Noni's<br></br> Coffee Shop
               </h1>
             </div>
-            <div className="col-md-6 col-sm-4 col-12 m-auto py-2 text-center">
+            <div className="col-md-6 col-sm-4 col-8 m-auto py-2 text-center">
               <Link to="/orderonline">
                 <li
                   id="btn3"
