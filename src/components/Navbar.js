@@ -31,7 +31,9 @@ export default class Navbar extends React.Component {
     return (
       <header id="headerNav">
         <div
-          className="navbar navbar-expand-lg fixed-top sticky-top"
+          className={`navbar navbar-expand-lg ${
+            this.state.orderOnline ? "fixed-top " : "sticky-top"
+          }`}
           style={{
             backgroundColor: "#f6c6b5",
             color: "#24355D",
