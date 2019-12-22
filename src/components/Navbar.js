@@ -25,15 +25,13 @@ export default class Navbar extends React.Component {
     } else {
       this.setState({ orderOnline: false });
     }
-    // console.log(this.nav.current.style.backgroundColor);
+    console.log(lastScrollY);
   };
   render() {
     return (
       <header id="headerNav">
         <div
-          className={`navbar navbar-expand-lg ${
-            this.state.orderOnline ? "fixed-top" : "position-static"
-          }`}
+          className="navbar navbar-expand-lg fixed-top sticky-top"
           style={{
             backgroundColor: "#f6c6b5",
             color: "#24355D",
@@ -135,14 +133,12 @@ export default class Navbar extends React.Component {
               </Link>
             </ul>
           </div>
-        </div>{" "}
+        </div>
         {!this.state.orderOnline ? (
           <div
             style={{
               backgroundColor: "#24355D",
-              padding: "10px",
-              position: "absolute",
-              width: "100%"
+              padding: "10px"
             }}
           >
             <h5 className="m-0 text-center">

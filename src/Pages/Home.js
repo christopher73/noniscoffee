@@ -56,53 +56,52 @@ export default class Home extends React.Component {
     return (
       <>
         <Navbar
-          isWindowlarge={window.innerWidth <= 760 ? false : true}
+          isWindowlarge={
+            window.innerWidth || window.innerHeight >= 760 ? true : false
+          }
         ></Navbar>
-
         <div
           id="main"
-          className="h-100 text-center w-100 d-flex flex-column align-content-center  justify-content-center "
+          className="d-flex flex-column align-content-center justify-content-md-center justify-content-around "
         >
-          <div className="row " style={{ marginTop: "-10%" }}>
-            <div className="col-md-12 m-auto text-white text-center">
-              <h1
-                style={{ fontFamily: " 'Rye', cursive", color: "#F2EFE6" }}
-                className={`${
-                  window.innerWidth <= 760 || window.innerHeight <= 700
-                    ? "h1 "
-                    : "display-2"
-                } text-uppercase  font-weight-lighter`}
-              >
-                Noni's<br></br> Coffee Shop
-              </h1>
-            </div>
-            <div className="col-md-6 col-sm-4 col-8 m-auto py-2 text-center">
-              <Link to="/orderonline">
-                <li
-                  id="btn3"
-                  className="btn btn-lg shadow-lg w-100 rounded-0  m-2 font-weight-bold text-uppercase "
+          <div className="container">
+            <div className="row ">
+              <div className="col-md-10 m-auto text-white text-center">
+                <h1
+                  style={{ fontFamily: " 'Rye', cursive", color: "#F2EFE6" }}
+                  className={`${
+                    window.innerWidth <= 760 || window.innerHeight <= 700
+                      ? "h1 "
+                      : "display-2"
+                  } text-uppercase  font-weight-lighter`}
                 >
-                  order online
-                </li>
-              </Link>
+                  Noni's<br></br> Coffee Shop
+                </h1>
+              </div>
+              <div className="col-md-4 col-sm-6 col-12 m-auto py-2 text-center">
+                <Link to="/orderonline">
+                  <li
+                    id="btn3"
+                    className="btn btn-lg shadow-lg rounded-0 font-weight-bold text-uppercase "
+                  >
+                    order online
+                  </li>
+                </Link>
 
-              <Link to="/menu">
-                <li
-                  id="btn3"
-                  className="btn btn-lg shadow-lg w-100 rounded-0  m-2 font-weight-bold text-uppercase "
-                >
-                  view menus
-                </li>
-              </Link>
+                <Link to="/menu">
+                  <li
+                    id="btn3"
+                    className="btn btn-lg shadow-lg rounded-0 font-weight-bold text-uppercase "
+                  >
+                    view menus
+                  </li>
+                </Link>
+              </div>
             </div>
-          </div>
+          </div>{" "}
           <div
-            style={{
-              right: "0",
-              bottom: "0",
-              padding: "5%",
-              position: "absolute"
-            }}
+            className="p-5 position-absolute"
+            style={{ right: 0, bottom: 0 }}
           >
             <Link
               activeClass="active"
