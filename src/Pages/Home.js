@@ -46,13 +46,7 @@ export default class Home extends React.Component {
     window.removeEventListener("resize", this.updateDimensions.bind(this));
   }
   render() {
-    const videoOptions = {
-      src: video,
-      autoPlay: true,
-      muted: true,
-      loop: true
-    };
-
+    console.log(this.props);
     return (
       <>
         <Navbar

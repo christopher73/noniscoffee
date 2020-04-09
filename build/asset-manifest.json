@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.309f3323.chunk.css",
+    "main.js": "/static/js/main.07d0de96.chunk.js",
+    "main.js.map": "/static/js/main.07d0de96.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.571b5865.js",
+    "runtime-main.js.map": "/static/js/runtime-main.571b5865.js.map",
+    "static/css/2.64a99b10.chunk.css": "/static/css/2.64a99b10.chunk.css",
+    "static/js/2.23520e2a.chunk.js": "/static/js/2.23520e2a.chunk.js",
+    "static/js/2.23520e2a.chunk.js.map": "/static/js/2.23520e2a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1c504180f48445245eab9577043b9e67.js": "/precache-manifest.1c504180f48445245eab9577043b9e67.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.64a99b10.chunk.css.map": "/static/css/2.64a99b10.chunk.css.map",
+    "static/css/main.309f3323.chunk.css.map": "/static/css/main.309f3323.chunk.css.map",
+    "static/media/App.css": "/static/media/breakfast2.ea0848ef.jpeg",
+    "static/media/coffee.mp4": "/static/media/coffee.cb399484.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.571b5865.js",
+    "static/css/2.64a99b10.chunk.css",
+    "static/js/2.23520e2a.chunk.js",
+    "static/css/main.309f3323.chunk.css",
+    "static/js/main.07d0de96.chunk.js"
+  ]
+}
